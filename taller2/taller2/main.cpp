@@ -5,7 +5,7 @@
 int main(){
 
     int c = 0;
-    std::cout<<"ola "<< c <<std::endl;
+    std::cout<<"ola negros de mierda "<< c <<std::endl;
     
     return 0;
 };
