@@ -1,7 +1,12 @@
 #include <iostream>
 #include "Nodo.h"
 
-Nodo::Nodo(int valor) { this->valor = valor; this->hijoIzq = nullptr; this -> hijoDer = nullptr; }
+Nodo::Nodo(int valor){ 
+    this->valor = valor; 
+    this->hijoIzq = nullptr; 
+    this -> hijoDer = nullptr; 
+    }
+    
 int Nodo::getValor() { return this->valor; }
 void Nodo::setValor(int valor) { this->dato = dato; }
 Nodo* Nodo::getHijoIzq() { return this->hijoIzq; }
