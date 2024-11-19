@@ -1,5 +1,8 @@
 #include <iostream>
 #include <sstream>
+#include "Nodo.h"
+
+
 using namespace std;
 char gatolol[10]= {'o','1','2','3','4','5','6','7','8','9'};
 
@@ -124,7 +127,7 @@ int main() {
     Tablero();
     if(i == 1)
     {
-        cout<< "\aWENA ERMANO GANO EL JUGADOR"<< --jugador;
+        cout<< "\aWENA ERMANO GANO EL JUGADOR "<< --jugador;
     }
     else{
         cout<<"\aTERMINA EN EMPATE";
