@@ -4,12 +4,6 @@ Aca se realizara el taller 2 de estructra de datos
 Benjamin Vega 21648877-6
 Claudio Monsalve
 =============================================================
-# TallerEstructura-2-
-Aca se realizara el taller 2 de estructra de datos
-================== Aumnos ===================================
-Benjamin Vega 21648877-6
-Claudio Monsalve
-=============================================================
 Instrucciones para Ejecutar el Programa en GitHub Codespaces:
 
 1. Instalar el compilador g++ (si no está instalado):
