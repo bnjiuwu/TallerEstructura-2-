@@ -66,9 +66,7 @@ Explicación Teórica del Algoritmo Minimax y la Poda Alfa-Beta:
         - Esto ocurre cuando:
             - Para MAX: 𝑣𝑎𝑙𝑜𝑟 ≤ Alfa.
             - Para MIN: 𝑣𝑎𝑙𝑜𝑟 ≥ Beta.
-    - Eficiencia:
-        - En el mejor caso, la poda Alfa-Beta reduce el número de nodos explorados, haciendo que la complejidad pase de 𝑂(𝑏^𝑑) a O(b^(d/2).
-
+              
 ================================================================
 
 Análisis de Complejidad Temporal del Algoritmo:
