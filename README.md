@@ -58,12 +58,12 @@ Explicación del Algoritmo Utilizado:
             - tablero: Representa el estado actual del juego. Es un objeto que contiene el tablero con las posiciones de las casillas y                        permite simular los movimientos.
             - esMax: Indica si es el turno de la IA (cuando es true, la IA busca maximizar su puntuación; cuando es false, el jugador                        humano busca minimizar la puntuación de la IA).
             - profundidad: Un parámetro opcional que limita la profundidad de la exploración en el árbol de decisiones. Mientras más                               profunda sea la búsqueda, más jugadas futuras se consideran.
-        - Evaluación Recursiva: La función minimax() simula las jugadas posibles y las evalúa, considerando las jugadas tanto de la IA            como del jugador humano. Para cada movimiento, se evalúa el resultado de la partida (victoria, derrota, empate).
-        - Decisión de la IA: Si es el turno de la IA, el algoritmo selecciona la jugada que maximiza su puntuación. Si es el turno del            jugador humano, selecciona la jugada que minimiza las posibilidades de la IA.
-        - Asignación de Valores: Los estados terminales del juego (victoria, derrota, empate) se valoran con:
-            - 1 si la IA gana.
-            - -1 si el jugador gana.
-            - 0 si es empate.
+    - Evaluación Recursiva: La función minimax() simula las jugadas posibles y las evalúa, considerando las jugadas tanto de la IA            como del jugador humano. Para cada movimiento, se evalúa el resultado de la partida (victoria, derrota, empate).
+    - Decisión de la IA: Si es el turno de la IA, el algoritmo selecciona la jugada que maximiza su puntuación. Si es el turno del            jugador humano, selecciona la jugada que minimiza las posibilidades de la IA.
+    - Asignación de Valores: Los estados terminales del juego (victoria, derrota, empate) se valoran con:
+          - 1 si la IA gana.
+          - -1 si el jugador gana.
+          - 0 si es empate.
          
 4. Poda Alfa-Beta:
     -La poda Alfa-Beta es una optimización del algoritmo Minimax que mejora su eficiencia al reducir el número de nodos explorados, descartando aquellas ramas del árbol de decisiones que no afectarán el resultado final.
