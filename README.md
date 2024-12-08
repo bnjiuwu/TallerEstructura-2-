@@ -27,6 +27,34 @@ Instrucciones para ejecutar el programa en Codespaces:
    
 ====================================================================================
 
+Explicación Teórica del Algoritmo Minimax y la Poda Alfa-Beta:
+
+1. Algoritmo Minimax
+    - El algoritmo Minimax es una técnica de decisión utilizada principalmente en juegos de dos jugadores de información perfecta (donde ambos jugadores conocen el estado completo del juego, como en el Ajedrez o el Gato). El objetivo es encontrar el movimiento óptimo para el jugador actual, asumiendo que ambos jugadores juegan de manera perfecta.
+
+    - Conceptos Clave:
+        - Árbol de decisiones: Cada nodo en el árbol representa un estado del juego.
+        - Las ramas representan posibles movimientos.
+        - Las hojas del árbol son los estados terminales (victoria, derrota o empate).
+          
+    - Turnos alternos:
+    - Los jugadores se turnan para realizar movimientos.
+    - Uno de ellos es MAX, que intenta maximizar su ganancia.
+    - El otro es MIN, que intenta minimizar la ganancia de MAX.
+      
+    - Evaluación de estados:
+        - Cada estado terminal se evalúa asignando un puntaje:
+        - Un valor positivo (por ejemplo, +10) si gana MAX.
+        - Un valor negativo (por ejemplo, -10) si gana MIN.
+        - Un valor de 0 si el juego termina en empate.
+          
+    - Propagación de valores:
+        - Los valores de las hojas del árbol (estados terminales) se propagan hacia arriba.
+        - En los nodos donde juega MAX, se selecciona el valor máximo de las ramas.
+        - En los nodos donde juega MIN, se selecciona el valor mínimo.
+
+================================================================
+
 Análisis de Complejidad Temporal del Algoritmo:
 
 El desempeño del algoritmo Minimax depende de dos factores principales:
