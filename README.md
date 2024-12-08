@@ -60,7 +60,30 @@ Explicación del Algoritmo Utilizado:
             - 1 si la IA gana.
             - -1 si el jugador gana.
             - 0 si es empate.
+         
+4. Poda Alfa-Beta:
+    -La poda Alfa-Beta es una optimización del algoritmo Minimax que mejora su eficiencia al reducir el número de nodos explorados, descartando aquellas ramas del árbol de decisiones que no afectarán el resultado final.
 
+    - Funcionamiento:
+        - La función minimaxAlfaBeta() toma los siguientes parámetros importantes:
+            - tablero: Representa el estado actual del juego, que se va actualizando conforme a los movimientos realizados.
+            - esMax: Indica si es el turno de la IA (MAX) o del jugador humano (MIN).
+            - alfa: El mejor valor conocido hasta ahora para la IA (MAX). A medida que el algoritmo evalúa las jugadas, alfa se                       actualiza si se encuentra un valor mejor.
+            - beta: El mejor valor conocido hasta ahora para el jugador humano (MIN). Al igual que alfa, beta se actualiza con cada                   evaluación.
+            - profundidad: Controla el nivel de profundidad en el árbol de decisiones, limitando la cantidad de jugadas evaluadas.
+              
+    - Funcionamiento de la Poda:
+        - Durante la exploración de los nodos, el algoritmo evalúa los posibles movimientos de ambos jugadores. Si encuentra un valor             que no puede mejorar el resultado para uno de los jugadores (basado en los valores de alfa y beta), esa rama del árbol se               descarta.
+        - Alfa se utiliza para maximizar el valor de la IA (MAX), y beta se utiliza para minimizar el valor del jugador humano (MIN).
+        - Si el valor de una jugada es peor que alfa (en el caso de MIN) o mejor que beta (en el caso de MAX), la rama se poda porque             ya no afectará el resultado final.
+
+5. Modos de Juego:
+    - El juego ofrece dos modos:
+        - Dos Jugadores: Donde dos personas juegan alternando turnos para hacer sus movimientos en el tablero.
+        - Jugador vs. IA: Donde el jugador se enfrenta a la IA. La IA utiliza el algoritmo Minimax para tomar decisiones, y se puede e            legir si la IA usa el algoritmo con poda Alfa-Beta o sin poda.
+    - Modo IA:
+        - El jugador puede elegir entre jugar contra una IA que usa Minimax sin poda o Minimax con poda Alfa-Beta para mejorar la                 eficiencia.
+          
 ====================================================================================
 
 Explicación Teórica del Algoritmo Minimax y la Poda Alfa-Beta:
