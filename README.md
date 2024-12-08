@@ -38,9 +38,9 @@ Explicación Teórica del Algoritmo Minimax y la Poda Alfa-Beta:
         - Las hojas del árbol son los estados terminales (victoria, derrota o empate).
           
     - Turnos alternos:
-    - Los jugadores se turnan para realizar movimientos.
-    - Uno de ellos es MAX, que intenta maximizar su ganancia.
-    - El otro es MIN, que intenta minimizar la ganancia de MAX.
+        - Los jugadores se turnan para realizar movimientos.
+        - Uno de ellos es MAX, que intenta maximizar su ganancia.
+        - El otro es MIN, que intenta minimizar la ganancia de MAX.
       
     - Evaluación de estados:
         - Cada estado terminal se evalúa asignando un puntaje:
