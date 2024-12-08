@@ -27,6 +27,31 @@ Instrucciones para ejecutar el programa en Codespaces:
    
 ====================================================================================
 
+Explicación del Algoritmo Utilizado
+1. Clase Tablero: 
+    - La clase Tablero gestiona el estado del juego y los movimientos de los jugadores. Proporciona las funcionalidades necesarias           para que tanto el jugador como la IA puedan interactuar con el tablero.
+
+    - Métodos clave:
+        - mostrar(): Muestra el estado actual del tablero en la consola.
+        - mover(int posicion, char marca): Realiza un movimiento en una posición específica, colocando la marca ('X' o 'O').
+        - verificarEstado(): Verifica si el juego ha terminado, indicando el ganador o un empate.
+        - reiniciar(): Restaura el tablero a su estado inicial.
+        - movimientosDisponibles(): Devuelve un vector con las posiciones disponibles en el tablero.
+        - deshacerMovimiento(int posicion): Revierte un movimiento realizado previamente.
+        - obtenerCasilla(int posicion): Devuelve el valor de una casilla específica en el tablero.
+          
+2. Función obtenerMejorMovimiento():
+    - La función obtenerMejorMovimiento() es responsable de elegir el mejor movimiento para la IA. Evalúa todas las posiciones disponibles y selecciona la que genere el mejor resultado, utilizando el algoritmo Minimax o Minimax con poda Alfa-Beta, según el modo seleccionado.
+
+    - Funcionamiento:
+        - La función recorre todas las posiciones vacías del tablero.
+        - Para cada posible movimiento, simula la jugada y evalúa el resultado utilizando el algoritmo Minimax o Minimax con poda Alfa-Beta.
+        - Después de evaluar todos los movimientos posibles, selecciona el movimiento con el valor más alto.
+        - Deshace los movimientos simulados para seguir evaluando las opciones restantes.
+        - Este método asegura que la IA elija siempre el mejor movimiento disponible en cada turno.
+
+====================================================================================
+
 Explicación Teórica del Algoritmo Minimax y la Poda Alfa-Beta:
 
 1. Algoritmo Minimax
