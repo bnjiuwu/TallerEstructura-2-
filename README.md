@@ -26,6 +26,7 @@ Instrucciones para ejecutar el programa en Codespaces:
         - (Esto iniciará el juego, y podrá seleccionar el modo de juego (Dos jugadores, Jugar contra la IA sin poda, Jugar contra la IA             con poda Alfa-Beta) y comenzar a jugar).
    
 ====================================================================================
+====================================================================================
 
 Explicación del Algoritmo Utilizado:
 1. Clase Tablero: 
@@ -101,6 +102,7 @@ Explicación del Algoritmo Utilizado:
         - El jugador puede elegir entre jugar contra una IA que usa Minimax sin poda o Minimax con poda Alfa-Beta para mejorar la                 eficiencia.
           
 ====================================================================================
+====================================================================================
 
 Explicación Teórica del Algoritmo Minimax y la Poda Alfa-Beta:
 
@@ -142,7 +144,8 @@ Explicación Teórica del Algoritmo Minimax y la Poda Alfa-Beta:
             - Para MAX: 𝑣𝑎𝑙𝑜𝑟 ≤ Alfa.
             - Para MIN: 𝑣𝑎𝑙𝑜𝑟 ≥ Beta.
               
-================================================================
+====================================================================================
+====================================================================================
 
 Análisis de Complejidad Temporal del Algoritmo:
 
@@ -187,4 +190,5 @@ A continuación, se compara la complejidad temporal antes y después de aplicar 
     - Con poda Alfa-Beta, el número de nodos explorados se reduce considerablemente, permitiendo manejar profundidades mayores en menos        tiempo.
     - Aunque en juegos pequeños como el Gato la diferencia en tiempo no es tan evidente, en juegos más complejos la poda Alfa-Beta es          esencial para que el algoritmo sea práctico.
 
+====================================================================================
 ====================================================================================
