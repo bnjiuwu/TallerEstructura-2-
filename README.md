@@ -55,19 +55,19 @@ A continuación, se compara la complejidad temporal antes y después de aplicar 
    
 
 2. Minimax con Poda Alfa-Beta:
-    La poda Alfa-Beta mejora significativamente la eficiencia del algoritmo Minimax al descartar ramas que no afectan el resultado final.
-    Complejidad optimizada:
-            𝑂(𝑏^(𝑑/2)
+    - La poda Alfa-Beta mejora significativamente la eficiencia del algoritmo Minimax al descartar ramas que no afectan el resultado           final.
+    - Complejidad optimizada:
+            - 𝑂(𝑏^(𝑑/2)
    
-    En el mejor caso (cuando los nodos están perfectamente ordenados), el número de nodos explorados se reduce drásticamente.
+    - En el mejor caso (cuando los nodos están perfectamente ordenados), el número de nodos explorados se reduce drásticamente.
 
-    Ejemplo práctico en el juego del Gato:
-        Con poda Alfa-Beta, el número de estados explorados se reduce aproximadamente a:
-            (raiz(9))^9 = 3^9 = 19,683 estados explorados.
+    - Ejemplo práctico en el juego del Gato:
+        - Con poda Alfa-Beta, el número de estados explorados se reduce aproximadamente a:
+            - (raiz(9))^9 = 3^9 = 19,683 estados explorados.
 
-        Comparado con los 362,880 estados de Minimax sin poda, la mejora es evidente.
+   - Comparado con los 362,880 estados de Minimax sin poda, la mejora es evidente.
 
-Conclusión:
+3. Conclusión:
     - Sin optimización, el algoritmo Minimax es costoso porque explora todos los nodos posibles.
     - Con poda Alfa-Beta, el número de nodos explorados se reduce considerablemente, permitiendo manejar profundidades mayores en menos        tiempo.
     - Aunque en juegos pequeños como el Gato la diferencia en tiempo no es tan evidente, en juegos más complejos la poda Alfa-Beta es          esencial para que el algoritmo sea práctico.
