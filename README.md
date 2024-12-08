@@ -38,20 +38,20 @@ El desempeño del algoritmo Minimax depende de dos factores principales:
 A continuación, se compara la complejidad temporal antes y después de aplicar la optimización de poda Alfa-Beta.
 
 1. Minimax sin Poda:
-    El algoritmo Minimax evalúa todas las ramas posibles del árbol de decisiones, lo que puede resultar de alto costo.
-    Complejidad:
+    - El algoritmo Minimax evalúa todas las ramas posibles del árbol de decisiones, lo que puede resultar de alto costo.
+    - Complejidad:
             𝑂(𝑏^d)
-    Donde:
+      - Donde:
         - b es el número de movimientos posibles por turno.
         - d es la profundidad máxima del árbol de decisiones.
 
    
-    Ejemplo práctico en el juego del Gato:
-        𝑏 = 9,8,7,... (número de casillas disponibles en cada turno).
-        𝑑 = 9 (número máximo de turnos).
-        El árbol completo tendría 9! = 362, 880 estados posibles.
+    - Ejemplo práctico en el juego del Gato:
+        - 𝑏 = 9,8,7,... (número de casillas disponibles en cada turno).
+        - 𝑑 = 9 (número máximo de turnos).
+        - El árbol completo tendría 9! = 362, 880 estados posibles.
     
-    Aunque este número es manejable en juegos pequeños como el Gato, Minimax sin optimización se vuelve impráctico en juegos más             complejos como Connect 4 o Ajedrez, debido al crecimiento exponencial del número de nodos.
+    - Aunque este número es manejable en juegos pequeños como el Gato, Minimax sin optimización se vuelve impráctico en juegos más             complejos como Connect 4 o Ajedrez, debido al crecimiento exponencial del número de nodos.
    
 
 2. Minimax con Poda Alfa-Beta:
