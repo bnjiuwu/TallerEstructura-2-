@@ -39,6 +39,8 @@ Explicación del Algoritmo Utilizado:
         - movimientosDisponibles(): Devuelve un vector con las posiciones disponibles en el tablero.
         - deshacerMovimiento(int posicion): Revierte un movimiento realizado previamente.
         - obtenerCasilla(int posicion): Devuelve el valor de una casilla específica en el tablero.
+
+
           
 2. Función obtenerMejorMovimiento():
     - La función es responsable de elegir el mejor movimiento para la IA. Evalúa todas las posiciones disponibles y selecciona la que genere el mejor resultado, utilizando el algoritmo Minimax o Minimax con poda Alfa-Beta, según el modo seleccionado.
@@ -49,6 +51,8 @@ Explicación del Algoritmo Utilizado:
         - Después de evaluar todos los movimientos posibles, selecciona el movimiento con el valor más alto.
         - Deshace los movimientos simulados para seguir evaluando las opciones restantes.
         - Este método asegura que la IA elija siempre el mejor movimiento disponible en cada turno.
+
+
      
 3. Algoritmo Minimax:
     - El algoritmo Minimax se utiliza para que la IA (jugador MAX) decida el mejor movimiento posible en el juego, evaluando todas las jugadas disponibles y simulando las jugadas de ambos jugadores. La IA selecciona la jugada que maximiza su puntuación y minimiza las del jugador humano (jugador MIN).
@@ -64,6 +68,8 @@ Explicación del Algoritmo Utilizado:
           - 1 si la IA gana.
           - -1 si el jugador gana.
           - 0 si es empate.
+
+
          
 4. Poda Alfa-Beta:
     -La poda Alfa-Beta es una optimización del algoritmo Minimax que mejora su eficiencia al reducir el número de nodos explorados, descartando aquellas ramas del árbol de decisiones que no afectarán el resultado final.
@@ -80,6 +86,8 @@ Explicación del Algoritmo Utilizado:
         - Durante la exploración de los nodos, el algoritmo evalúa los posibles movimientos de ambos jugadores. Si encuentra un valor             que no puede mejorar el resultado para uno de los jugadores (basado en los valores de alfa y beta), esa rama del árbol se               descarta.
         - Alfa se utiliza para maximizar el valor de la IA (MAX), y beta se utiliza para minimizar el valor del jugador humano (MIN).
         - Si el valor de una jugada es peor que alfa (en el caso de MIN) o mejor que beta (en el caso de MAX), la rama se poda porque             ya no afectará el resultado final.
+
+
 
 5. Modos de Juego:
     - El juego ofrece dos modos:
