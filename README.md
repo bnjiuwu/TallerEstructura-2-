@@ -54,6 +54,10 @@ Explicación del Algoritmo Utilizado:
     - El algoritmo Minimax se utiliza para que la IA (jugador MAX) decida el mejor movimiento posible en el juego, evaluando todas las jugadas disponibles y simulando las jugadas de ambos jugadores. La IA selecciona la jugada que maximiza su puntuación y minimiza las del jugador humano (jugador MIN).
 
     - Funcionamiento:
+        - Parámetros:
+            - tablero: Representa el estado actual del juego. Es un objeto que contiene el tablero con las posiciones de las casillas y                        permite simular los movimientos.
+            - esMax: Indica si es el turno de la IA (cuando es true, la IA busca maximizar su puntuación; cuando es false, el jugador                        humano busca minimizar la puntuación de la IA).
+            - profundidad: Un parámetro opcional que limita la profundidad de la exploración en el árbol de decisiones. Mientras más                               profunda sea la búsqueda, más jugadas futuras se consideran.
         - Evaluación Recursiva: La función minimax() simula las jugadas posibles y las evalúa, considerando las jugadas tanto de la IA            como del jugador humano. Para cada movimiento, se evalúa el resultado de la partida (victoria, derrota, empate).
         - Decisión de la IA: Si es el turno de la IA, el algoritmo selecciona la jugada que maximiza su puntuación. Si es el turno del            jugador humano, selecciona la jugada que minimiza las posibilidades de la IA.
         - Asignación de Valores: Los estados terminales del juego (victoria, derrota, empate) se valoran con:
