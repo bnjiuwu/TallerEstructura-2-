@@ -44,9 +44,9 @@ Explicación Teórica del Algoritmo Minimax y la Poda Alfa-Beta:
       
     - Evaluación de estados:
         - Cada estado terminal se evalúa asignando un puntaje:
-        - Un valor positivo (por ejemplo, +10) si gana MAX.
-        - Un valor negativo (por ejemplo, -10) si gana MIN.
-        - Un valor de 0 si el juego termina en empate.
+            - Un valor positivo (por ejemplo, +10) si gana MAX.
+            - Un valor negativo (por ejemplo, -10) si gana MIN.
+            - Un valor de 0 si el juego termina en empate.
           
     - Propagación de valores:
         - Los valores de las hojas del árbol (estados terminales) se propagan hacia arriba.
