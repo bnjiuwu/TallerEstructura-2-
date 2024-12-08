@@ -1,6 +1,6 @@
 # TallerEstructura-2-
 Aca se realizara el taller 2 de estructra de datos
-================== Alumnos ===================================
+================== Alumnos =====================
 Benjamin Vega 21648877-6
 Claudio Monsalve
 =========================================================================================================================================
@@ -26,7 +26,7 @@ Instrucciones para Ejecutar el Programa en GitHub Codespaces:
         - ./gato
         - (Esto iniciará el juego, y podrá seleccionar el modo de juego (Dos jugadores, Jugar contra la IA sin poda, Jugar contra la IA             con poda Alfa-Beta) y comenzar a jugar).
    
-==============================================================================================
+====================================================================================
 
 Análisis de Complejidad Temporal del Algoritmo:
 
