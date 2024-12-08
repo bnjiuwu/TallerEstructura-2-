@@ -1,8 +1,7 @@
 # TallerEstructura-2-
 Aca se realizara el taller 2 de estructra de datos
 ============== Alumnos ===================
-Benjamin Vega 21648877-6
-Claudio Monsalve 21724524-9
+Benjamin Vega 21648877-6, Claudio Monsalve 21724524-9
 =========================================================================================================================================
 
 Instrucciones para Ejecutar el Programa en GitHub Codespaces:
