@@ -41,7 +41,7 @@ Explicación del Algoritmo Utilizado
         - obtenerCasilla(int posicion): Devuelve el valor de una casilla específica en el tablero.
           
 2. Función obtenerMejorMovimiento():
-    - La función obtenerMejorMovimiento() es responsable de elegir el mejor movimiento para la IA. Evalúa todas las posiciones disponibles y selecciona la que genere el mejor resultado, utilizando el algoritmo Minimax o Minimax con poda Alfa-Beta, según el modo seleccionado.
+    - La función es responsable de elegir el mejor movimiento para la IA. Evalúa todas las posiciones disponibles y selecciona la que genere el mejor resultado, utilizando el algoritmo Minimax o Minimax con poda Alfa-Beta, según el modo seleccionado.
 
     - Funcionamiento:
         - La función recorre todas las posiciones vacías del tablero.
