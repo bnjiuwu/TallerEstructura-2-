@@ -1,139 +1,116 @@
 #include <iostream>
-#include <sstream>
-#include "Nodo.h"
-
-
+#include <vector>
 using namespace std;
-char gatolol[10]= {'o','1','2','3','4','5','6','7','8','9'};
 
+// Clase Tablero
+class Tablero {
+private:
+    vector<char> board; // Tablero de 9 posiciones
+    int moves;          // Número de movimientos realizados
 
-int checkWin(){
-    //horizontal
-    if(gatolol[1] == gatolol[2] && gatolol[2] == gatolol[3]){
-        return 1;
+public:
+    // Constructor inicializa el tablero
+    Tablero() : board(10), moves(0) {
+        for (int i = 1; i <= 9; ++i) board[i] = '0' + i;
     }
-    else if(gatolol[4] == gatolol[5] && gatolol[5] == gatolol[6]){
-        return 1;
-    }
-    else if(gatolol[7] == gatolol[8] && gatolol[8] == gatolol[9]){
-        return 1;
-    }
-    //vertical
-    else if(gatolol[1] == gatolol[4] && gatolol[4] == gatolol[7]){
-        return 1;
-    }
-    else if(gatolol[2] == gatolol[5] && gatolol[5] == gatolol[8]){
-        return 1;
-    }
-    else if(gatolol[3] == gatolol[6] && gatolol[6] == gatolol[9]){
-        return 1;
-    }
-    //diagonal
-    else if(gatolol[1] == gatolol[5] && gatolol[5] == gatolol[9]){
-        return 1;
-    }
-    else if(gatolol[7] == gatolol[5] && gatolol[5] == gatolol[3]){
-        return 1;
-    }
-    else if(gatolol[1] !='1' && gatolol[2] !='2' && gatolol[3] !='3' &&
-            gatolol[4] !='4' && gatolol[5] !='5' && gatolol[6] !='6' &&
-            gatolol[7] !='7' && gatolol[8] !='8' && gatolol[9] !='9' )
-            {return 0;}
-    else{return -1;}
-}
-void Tablero(){
-    system("cls");
-    std::cout <<"\n\n\t EL GATO JUEGO\n\n";
-    std::cout <<"Jugador 1(X) - Jugador 2(O)"<<std::endl<<std::endl;
-    std::cout<<std::endl;
 
+    // Muestra el estado actual del tablero
+    void mostrar() {
+        cout << "\nJugador 1 (X)  -  Jugador 2 (O)\n\n";
+        cout << "   |   |   \n";
+        cout << " " << board[1] << " | " << board[2] << " | " << board[3] << "\n";
+        cout << "___|___|___\n";
+        cout << "   |   |   \n";
+        cout << " " << board[4] << " | " << board[5] << " | " << board[6] << "\n";
+        cout << "___|___|___\n";
+        cout << "   |   |   \n";
+        cout << " " << board[7] << " | " << board[8] << " | " << board[9] << "\n";
+        cout << "   |   |   \n";
+    }
 
-    cout<<"   |   |   "<<endl;
-    cout<<" "<<gatolol[1]<<" | "<< gatolol[2]<<" | "<<gatolol[3]<< endl;
-    cout<<"___|___|___"<<endl;
-    cout<<"   |   |   "<<endl;
-    cout<<" "<<gatolol[4]<<" | "<< gatolol[5]<<" | "<<gatolol[6]<< endl;
-    cout<<"___|___|___"<<endl;
-    cout<<"   |   |   "<<endl;
-    cout<<" "<<gatolol[7]<<" | "<< gatolol[8]<<" | "<<gatolol[9]<< endl;
-    cout<<"   |   |   "<<endl;
-}
+    // Realiza un movimiento en el tablero
+    bool mover(int posicion, char marca) {
+        if (posicion < 1 || posicion > 9 || board[posicion] != '0' + posicion) {
+            return false; // Movimiento inválido
+        }
+        board[posicion] = marca;
+        moves++;
+        return true; // Movimiento válido
+    }
 
+    // Verifica si hay un ganador o empate
+    int verificarEstado() {
+        // Revisión horizontal
+        if (board[1] == board[2] && board[2] == board[3]) return 1;
+        if (board[4] == board[5] && board[5] == board[6]) return 1;
+        if (board[7] == board[8] && board[8] == board[9]) return 1;
+
+        // Revisión vertical
+        if (board[1] == board[4] && board[4] == board[7]) return 1;
+        if (board[2] == board[5] && board[5] == board[8]) return 1;
+        if (board[3] == board[6] && board[6] == board[9]) return 1;
+
+        // Revisión diagonal
+        if (board[1] == board[5] && board[5] == board[9]) return 1;
+        if (board[3] == board[5] && board[5] == board[7]) return 1;
+
+        // Empate (si todas las posiciones están ocupadas)
+        if (moves == 9) return 0;
+
+        // Aún no hay ganador
+        return -1;
+    }
+};
+
+// Función principal del juego
 int main() {
+    Tablero tablero;
+    int jugador = 1, estado = -1, posicion;
+    char marca;
 
-    int jugador = 1,i, choice;
+    cout << "\n\n\t¡BIENVENIDO AL JUEGO DEL GATO!\n\n";
 
-    char marka;
-    // gato :v
+    do {
+        tablero.mostrar();
 
-    do{
-        Tablero();
-        jugador = (jugador%2)?1:2;
-        cout<<"Jugador "<< jugador<<" , ingrese el numero: ";
-        cin >> choice;
-        marka = (jugador == 1)? 'X':'O';
+        // Determinar el jugador actual
+        jugador = (jugador % 2) ? 1 : 2;
+        marca = (jugador == 1) ? 'X' : 'O';
 
-        if(choice == 1 && gatolol[1]=='1')
-        {
-            gatolol[1] = marka;
-        }
-        else if(choice == 2 && gatolol[2]=='2')
-        {
-            gatolol[2] = marka;
-        }
-        else if(choice == 3 && gatolol[3]=='3')
-        {
-            gatolol[3] = marka;
-        }
-        else if(choice == 4 && gatolol[4]=='4')
-        {
-            gatolol[4] = marka;
-        }
-        else if(choice == 5 && gatolol[5]=='5')
-        {
-            gatolol[5] = marka;
-        }
+        bool movimientoValido = false;
 
-        else if(choice == 6 && gatolol[6]=='6')
-        {
-            gatolol[6] = marka;
+        // Solicitar y validar movimiento
+        while (!movimientoValido) {
+            cout << "Jugador " << jugador << ", ingresa tu movimiento (1-9): ";
+            cin >> posicion;
+
+            // Validar entrada
+            if (cin.fail()) {
+                cin.clear();                // Restablecer el estado de cin
+                cin.ignore(1000, '\n');     // Descartar entrada inválida
+                cout << "Entrada inválida. Ingresa un número entre 1 y 9.\n";
+            } else if (posicion < 1 || posicion > 9) {
+                cout << "Posición fuera de rango. Ingresa un número entre 1 y 9.\n";
+            } else if (!tablero.mover(posicion, marca)) {
+                cout << "Posición ocupada. Intenta de nuevo.\n";
+            } else {
+                movimientoValido = true; // Movimiento válido
+            }
         }
 
-        else if(choice == 7 && gatolol[7]=='7')
-        {
-            gatolol[7] = marka;
-        }
-        else if(choice == 8 && gatolol[8]=='8')
-        {
-            gatolol[8] = marka;
-        }
-        else if(choice == 9 && gatolol[9]=='9')
-        {
-            gatolol[9] = marka;
-        }else
-        {
-            cout << "movimiento invalido";
-            jugador--;
-            cin.ignore();
-            cin.get();
-        }
-
-        i = checkWin();
+        // Verificar estado del juego
+        estado = tablero.verificarEstado();
         jugador++;
 
-    }
-    while(i == -1);
+    } while (estado == -1); // Continuar hasta que haya un ganador o empate
 
-    Tablero();
-    if(i == 1)
-    {
-        cout<< "\aWENA ERMANO GANO EL JUGADOR "<< --jugador;
+    tablero.mostrar();
+
+    if (estado == 1) {
+        cout << "¡Felicidades! El Jugador " << --jugador << " gana.\n";
+    } else {
+        cout << "¡Es un empate!\n";
     }
-    else{
-        cout<<"\aTERMINA EN EMPATE";
-    }
-    cin.ignore();
-    cin.get();
 
     return 0;
-};
+}
