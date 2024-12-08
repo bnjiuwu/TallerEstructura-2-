@@ -27,7 +27,7 @@ Instrucciones para ejecutar el programa en Codespaces:
    
 ====================================================================================
 
-Explicación del Algoritmo Utilizado
+Explicación del Algoritmo Utilizado:
 1. Clase Tablero: 
     - La clase Tablero gestiona el estado del juego y los movimientos de los jugadores. Proporciona las funcionalidades necesarias           para que tanto el jugador como la IA puedan interactuar con el tablero.
 
