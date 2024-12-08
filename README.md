@@ -30,8 +30,8 @@ Instrucciones para ejecutar el programa en Codespaces:
 Análisis de Complejidad Temporal del Algoritmo:
 
 El desempeño del algoritmo Minimax depende de dos factores principales:
-    - Factor de ramificación (b): Número de movimientos posibles en cada turno.
-    - Profundidad del árbol (d): Número máximo de turnos restantes en el juego.
+- Factor de ramificación (b): Número de movimientos posibles en cada turno.
+- Profundidad del árbol (d): Número máximo de turnos restantes en el juego.
     
 A continuación, se compara la complejidad temporal antes y después de aplicar la optimización de poda Alfa-Beta.
 
