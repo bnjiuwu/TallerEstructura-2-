@@ -34,8 +34,8 @@ Explicación Teórica del Algoritmo Minimax y la Poda Alfa-Beta:
 
     - Conceptos Clave:
         - Árbol de decisiones: Cada nodo en el árbol representa un estado del juego.
-        - Las ramas representan posibles movimientos.
-        - Las hojas del árbol son los estados terminales (victoria, derrota o empate).
+        - Las ramas: Representan posibles movimientos.
+        - Las hojas del árbol: Son los estados terminales (victoria, derrota o empate).
           
     - Turnos alternos:
         - Los jugadores se turnan para realizar movimientos.
