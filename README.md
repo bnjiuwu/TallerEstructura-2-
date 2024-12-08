@@ -12,7 +12,7 @@ Instrucciones para Ejecutar el Programa en GitHub Codespaces:
     - Ejecute los siguientes comandos para actualizar el sistema e instalar el compilador g++:
         - sudo apt update
         - sudo apt install g++
-    (Esto instalará el compilador de C++ necesario para compilar el programa).
+        - (Esto instalará el compilador de C++ necesario para compilar el programa).
 
 2. Compilar el archivo main.cpp:
     - Asegure de estar en el directorio donde se encuentra el archivo main.cpp. Si no está seguro, puede usar el comando ls para     
@@ -20,14 +20,14 @@ Instrucciones para Ejecutar el Programa en GitHub Codespaces:
 
     - Compile el archivo con el siguiente comando:
         - g++ -o gato main.cpp
-      (Este comando creará un archivo ejecutable llamado gato en el directorio actual).
+        - (Este comando creará un archivo ejecutable llamado gato en el directorio actual).
 
 3. Ejecutar el programa:
     - Una vez que el archivo se haya compilado correctamente, ejecute el programa con el siguiente comando:
         - ./gato
-    (Esto iniciará el juego, y podrá seleccionar el modo de juego (Dos jugadores, Jugar contra la IA sin poda, Jugar contra la IA con        poda Alfa-Beta) y comenzar a jugar).
+        - (Esto iniciará el juego, y podrá seleccionar el modo de juego (Dos jugadores, Jugar contra la IA sin poda, Jugar contra la IA             con poda Alfa-Beta) y comenzar a jugar).
    
-=========================================================================================================================================
+=====================================================================================================================
 
 Análisis de Complejidad Temporal del Algoritmo:
 
@@ -72,4 +72,4 @@ A continuación, se compara la complejidad temporal antes y después de aplicar 
     - Con poda Alfa-Beta, el número de nodos explorados se reduce considerablemente, permitiendo manejar profundidades mayores en menos        tiempo.
     - Aunque en juegos pequeños como el Gato la diferencia en tiempo no es tan evidente, en juegos más complejos la poda Alfa-Beta es          esencial para que el algoritmo sea práctico.
 
-=========================================================================================================================================
+=============================================================================================================================
