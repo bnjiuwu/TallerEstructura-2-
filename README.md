@@ -23,7 +23,7 @@ Instrucciones para Ejecutar el Programa en GitHub Codespaces:
       (Este comando creará un archivo ejecutable llamado gato en el directorio actual).
 
 3. Ejecutar el programa:
-    -Una vez que el archivo se haya compilado correctamente, ejecute el programa con el siguiente comando:
+    - Una vez que el archivo se haya compilado correctamente, ejecute el programa con el siguiente comando:
         - ./gato
     (Esto iniciará el juego, y podrá seleccionar el modo de juego (Dos jugadores, Jugar contra la IA sin poda, Jugar contra la IA con        poda Alfa-Beta) y comenzar a jugar).
    
