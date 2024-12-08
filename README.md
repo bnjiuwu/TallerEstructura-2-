@@ -52,6 +52,7 @@ Explicación Teórica del Algoritmo Minimax y la Poda Alfa-Beta:
         - Los valores de las hojas del árbol (estados terminales) se propagan hacia arriba.
         - En los nodos donde juega MAX, se selecciona el valor máximo de las ramas.
         - En los nodos donde juega MIN, se selecciona el valor mínimo.
+          
      
 2. Poda Alfa-Beta:
     - La poda Alfa-Beta es una optimización del algoritmo Minimax que permite reducir la cantidad de nodos explorados en el árbol de decisiones, descartando ramas que no influyen en el resultado final.
