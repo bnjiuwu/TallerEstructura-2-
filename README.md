@@ -4,10 +4,10 @@ Aca se realizara el taller 2 de estructra de datos
 Benjamin Vega 21648877-6, Claudio Monsalve 21724524-9
 =========================================================================================================================================
 
-Instrucciones para Ejecutar el Programa en GitHub Codespaces:
+Instrucciones para ejecutar el programa en Codespaces:
 
 1. Instalar el compilador g++:
-    - Abra una terminal en su GitHub Codespace.
+    - Abra una terminal en su Codespace.
     - Ejecute los siguientes comandos para actualizar el sistema e instalar el compilador g++:
         - sudo apt update
         - sudo apt install g++
