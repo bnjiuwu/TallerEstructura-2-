@@ -15,8 +15,7 @@ Instrucciones para Ejecutar el Programa en GitHub Codespaces:
         - (Esto instalará el compilador de C++ necesario para compilar el programa).
 
 2. Compilar el archivo main.cpp:
-    - Asegure de estar en el directorio donde se encuentra el archivo main.cpp. Si no está seguro, puede usar el comando ls para     
-      listar los archivos en el directorio.
+    - Asegure de estar en el directorio donde se encuentra el archivo main.cpp. Si no está seguro, puede usar el comando ls para listar los archivos en el directorio.
 
     - Compile el archivo con el siguiente comando:
         - g++ -o gato main.cpp
@@ -27,7 +26,7 @@ Instrucciones para Ejecutar el Programa en GitHub Codespaces:
         - ./gato
         - (Esto iniciará el juego, y podrá seleccionar el modo de juego (Dos jugadores, Jugar contra la IA sin poda, Jugar contra la IA             con poda Alfa-Beta) y comenzar a jugar).
    
-=====================================================================================================================
+==============================================================================================
 
 Análisis de Complejidad Temporal del Algoritmo:
 
@@ -72,4 +71,4 @@ A continuación, se compara la complejidad temporal antes y después de aplicar 
     - Con poda Alfa-Beta, el número de nodos explorados se reduce considerablemente, permitiendo manejar profundidades mayores en menos        tiempo.
     - Aunque en juegos pequeños como el Gato la diferencia en tiempo no es tan evidente, en juegos más complejos la poda Alfa-Beta es          esencial para que el algoritmo sea práctico.
 
-=============================================================================================================================
+====================================================================================
