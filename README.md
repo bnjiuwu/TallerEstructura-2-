@@ -45,9 +45,13 @@ Explicación del Algoritmo Utilizado:
 2. Función obtenerMejorMovimiento():
     - La función es responsable de elegir el mejor movimiento para la IA. Evalúa todas las posiciones disponibles y selecciona la que genere el mejor resultado, utilizando el algoritmo Minimax o Minimax con poda Alfa-Beta, según el modo seleccionado.
 
+    - Parámetros:
+        - tablero: Es el objeto que contiene el estado actual del juego. Se pasa por referencia para que la función pueda modificar el                     tablero y simular los movimientos de la IA.
+        - usarPoda: Un valor booleano que indica si la poda Alfa-Beta debe ser utilizada. Si es true, la función emplea la poda Alfa-                        Beta para mejorar la eficiencia al evaluar las jugadas; si es false, utiliza el algoritmo Minimax sin poda.
+          
     - Funcionamiento:
         - La función recorre todas las posiciones vacías del tablero.
-        - Para cada posible movimiento, simula la jugada y evalúa el resultado utilizando el algoritmo Minimax o Minimax con poda Alfa-Beta.
+        - Para cada posible movimiento, simula la jugada y evalúa el resultado utilizando el algoritmo Minimax o Minimax con poda Alfa-           Beta.
         - Después de evaluar todos los movimientos posibles, selecciona el movimiento con el valor más alto.
         - Deshace los movimientos simulados para seguir evaluando las opciones restantes.
         - Este método asegura que la IA elija siempre el mejor movimiento disponible en cada turno.
@@ -57,17 +61,17 @@ Explicación del Algoritmo Utilizado:
 3. Algoritmo Minimax:
     - El algoritmo Minimax se utiliza para que la IA (jugador MAX) decida el mejor movimiento posible en el juego, evaluando todas las jugadas disponibles y simulando las jugadas de ambos jugadores. La IA selecciona la jugada que maximiza su puntuación y minimiza las del jugador humano (jugador MIN).
 
-    - Funcionamiento:
-        - Parámetros:
+     - Parámetros:
             - tablero: Representa el estado actual del juego. Es un objeto que contiene el tablero con las posiciones de las casillas y                        permite simular los movimientos.
             - esMax: Indica si es el turno de la IA (cuando es true, la IA busca maximizar su puntuación; cuando es false, el jugador                        humano busca minimizar la puntuación de la IA).
             - profundidad: Un parámetro opcional que limita la profundidad de la exploración en el árbol de decisiones. Mientras más                               profunda sea la búsqueda, más jugadas futuras se consideran.
-    - Evaluación Recursiva: La función minimax() simula las jugadas posibles y las evalúa, considerando las jugadas tanto de la IA            como del jugador humano. Para cada movimiento, se evalúa el resultado de la partida (victoria, derrota, empate).
-    - Decisión de la IA: Si es el turno de la IA, el algoritmo selecciona la jugada que maximiza su puntuación. Si es el turno del            jugador humano, selecciona la jugada que minimiza las posibilidades de la IA.
-    - Asignación de Valores: Los estados terminales del juego (victoria, derrota, empate) se valoran con:
-          - 1 si la IA gana.
-          - -1 si el jugador gana.
-          - 0 si es empate.
+    - Funcionamiento:
+        - Evaluación Recursiva: La función minimax() simula las jugadas posibles y las evalúa, considerando las jugadas tanto de la IA            como del jugador humano. Para cada movimiento, se evalúa el resultado de la partida (victoria, derrota, empate).
+        - Decisión de la IA: Si es el turno de la IA, el algoritmo selecciona la jugada que maximiza su puntuación. Si es el turno del            jugador humano, selecciona la jugada que minimiza las posibilidades de la IA.
+        - Asignación de Valores: Los estados terminales del juego (victoria, derrota, empate) se valoran con:
+              - 1 si la IA gana.
+              - -1 si el jugador gana.
+              - 0 si es empate.
 
 
          
