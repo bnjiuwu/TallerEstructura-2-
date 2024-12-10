@@ -136,6 +136,31 @@ class Tablero
         {
             return tablero[posicion];
         }
+
+        void mostrarReglas() 
+        {
+            cout << "\n--- Reglas del Juego ---\n";
+            cout << "1. El juego se juega en un tablero de 3x3.\n";
+            cout << "2. Los jugadores se alternan para colocar su marca (X o O) en una casilla vacía.\n";
+            cout << "3. Las casillas están numeradas del 1 al 9 como se muestra a continuación:\n";
+            cout << "   |   |   \n";
+            cout << " 1 | 2 | 3 \n";
+            cout << "___|___|___\n";
+            cout << "   |   |   \n";
+            cout << " 4 | 5 | 6 \n";
+            cout << "___|___|___\n";
+            cout << "   |   |   \n";
+            cout << " 7 | 8 | 9 \n";
+            cout << "   |   |   \n";
+            cout << "4. Un jugador gana si logra alinear tres de sus marcas en una fila, columna o diagonal.\n";
+            cout << "5. Si todas las casillas se llenan y no hay ganador, el juego termina en empate.\n";
+            cout << "6. El juego puede ser jugado por dos jugadores humanos o por un jugador contra la IA.\n";
+            cout << "7. Los jugadores deben ingresar un número entre 1 y 9 para hacer su movimiento.\n";
+            cout << "8. En caso de que un jugador intente mover en una casilla ya ocupada o fuera de rango, el movimiento será inválido.\n";
+            cout << "¡Que comience el juego! ¡Diviértete!\n";
+        }
+};
+        
 };
 
 // Algoritmo Minimax
@@ -370,7 +395,8 @@ int main() {
         cout << "1. Dos jugadores\n";
         cout << "2. Jugar contra la IA (Minimax sin poda)\n";
         cout << "3. Jugar contra la IA (Minimax con poda Alfa-Beta)\n";
-        cout << "4. Salir\n";
+        cout << "4. Ver reglas\n";
+        cout << "5. Salir\n";
         cout << "Selecciona una opción: ";
         cin >> opcion;
 
@@ -388,6 +414,9 @@ int main() {
                 modoContraIA(tablero, true);
                 break;
             case 4:
+                tablero.mostrarReglas();
+                break
+            case 5:
                 cout << "¡Gracias por jugar!\n";
                 break;
             default:
