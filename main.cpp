@@ -415,7 +415,7 @@ int main() {
                 break;
             case 4:
                 tablero.mostrarReglas();
-                break
+                break;
             case 5:
                 cout << "¡Gracias por jugar!\n";
                 break;
