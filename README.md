@@ -55,7 +55,7 @@ Explicación del Algoritmo Utilizado:
     - Funcionamiento:
         - Evalúa todas las jugadas posibles para ambos jugadores (IA y humano).
         - Escoge la opción que maximiza la puntuación de la IA y minimiza las oportunidades del jugador.
-        - Asignación de Valores: Los estados terminales del juego (victoria, derrota, empate) se valoran con
+        - Asignación de Valores: Los estados terminales del juego (victoria, derrota, empate) se valoran con:
               - 1 si la IA gana.
               - -1 si el jugador gana.
               - 0 si es empate.
