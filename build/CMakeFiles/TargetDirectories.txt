@@ -1,2 +1,0 @@
-E:/MisDoctos/GitHub/taller2-estrDatos/build/CMakeFiles/edit_cache.dir
-E:/MisDoctos/GitHub/taller2-estrDatos/build/CMakeFiles/rebuild_cache.dir
