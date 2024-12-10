@@ -161,8 +161,6 @@ class Tablero
         }
 };
         
-};
-
 // Algoritmo Minimax
 int minimax(Tablero &tablero, bool esMax, int profundidad = 0) 
 {
