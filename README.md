@@ -143,7 +143,8 @@ Explicación Teórica del Algoritmo Minimax y la Poda Alfa-Beta:
 
 Diagrama de arbol de juego para un caso simple
 
-![diagrama](https://github.com/user-attachments/assets/3c9b0854-8e87-4f48-b73a-5e9090e5acdc)
+![arbolgato](https://github.com/user-attachments/assets/4970fc27-6e45-417f-a237-17b21ba4aaf1)
+
 
 ====================================================================================
 
