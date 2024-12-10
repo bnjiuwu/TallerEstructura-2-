@@ -183,3 +183,4 @@ A continuación, se compara la complejidad temporal antes y después de aplicar 
     - Aunque en juegos pequeños como el Gato la diferencia en tiempo no es tan evidente, en juegos más complejos la poda Alfa-Beta es         esencial para que el algoritmo sea práctico.
 
 ====================================================================================
+![diagrama](https://github.com/user-attachments/assets/3c9b0854-8e87-4f48-b73a-5e9090e5acdc)
