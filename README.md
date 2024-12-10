@@ -40,6 +40,7 @@ Explicación del Algoritmo Utilizado:
         - movimientosDisponibles(): Devuelve una lista con las casillas libres para jugar.
         - deshacerMovimiento(int posicion): Revierte un movimiento realizado previamente.
         - obtenerCasilla(int posicion): Devuelve el valor de una casilla específica en el tablero.
+        - mostarReglas(): Muestra las reglas del juego.
 
 
      
