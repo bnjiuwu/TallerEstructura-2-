@@ -420,7 +420,7 @@ int main() {
             default:
                 cout << "Opción inválida. Intenta de nuevo.\n";
         }
-    } while (opcion != 4);
+    } while (opcion != 5);
 
     return 0;
 }
